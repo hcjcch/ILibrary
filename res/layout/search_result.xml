@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   
+    android:background="#ffffffff"
+    tools:context=".MainActivity" >
+    <LinearLayout
+        android:id="@+id/Top_linear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#ff333333" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:text="@string/app_name"
+            android:textSize="22sp"
+            android:textColor="#ffffffff"
+            />
+    </LinearLayout>
+   <RelativeLayout
+        android:id="@+id/linearLayout01"
+        
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/forme"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_bt"
+            />
+        <TextView 
+            android:id="@+id/page"   
+            android:layout_toRightOf="@id/forme"
+			android:gravity="center_horizontal"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textColor="#339999"/>
+        <Button
+            android:id="@+id/next"
+            android:layout_toRightOf="@id/page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/next_bt"
+            />
+    </RelativeLayout>  
+    <ListView 
+        android:id="@+id/booklist"
+        android:layout_below="@id/Top_linear"
+        android:layout_above="@id/linearLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+</RelativeLayout>

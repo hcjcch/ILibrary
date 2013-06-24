@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+	 <LinearLayout
+        android:id="@+id/Top_linear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        
+        android:background="#ff333333" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:text="@string/app_name"
+            android:textSize="22sp"
+            android:textColor="#ffffffff"
+            />
+    </LinearLayout>
+
+	<LinearLayout
+    	android:id="@+id/borrow_bookXinxi"
+    	android:layout_below="@id/Top_linear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:orientation="vertical" >
+		<TextView 
+		    android:id="@+id/text1"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:textSize="22sp"/>
+		<TextView 
+		    android:id="@+id/text2"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:textSize="18sp"/>
+		<TextView 
+		    android:id="@+id/text3"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:textSize="18sp"/>
+		<TextView 
+		    android:id="@+id/text4"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:textSize="18sp"/>
+	</LinearLayout>
+    <Button 
+        android:id="@+id/fanhui"
+        android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/fanhuidiyiye"/>
+    <ListView 
+        android:id="@+id/borrow_xinxi"
+        android:layout_above="@id/fanhui"
+        android:layout_below="@id/borrow_bookXinxi"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+   		android:paddingLeft="@dimen/activity_horizontal_margin"
+    	android:paddingRight="@dimen/activity_horizontal_margin"
+    	android:paddingTop="@dimen/activity_vertical_margin"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+    </ListView>
+
+</RelativeLayout>
